@@ -1,0 +1,48 @@
+body {
+  background: #ffffff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffffff, #ECE9E6);
+  background: linear-gradient(to right, #ffffff, #ffffff, #ECE9E6);
+
+}
+
+img {
+  height: 175px;
+  width: 175px;
+}
+
+.btn {
+  border-radius: 50%;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+#red {
+  background: red;
+}
+
+#orange {
+  background: orange;
+}
+
+#yellow {
+  background: yellow;
+}
+
+#green {
+  background: green;
+}
+
+#blue {
+  background: blue;
+}
+
+#indigo {
+  background: indigo;
+}
+
+#violet {
+  background: violet;
+}

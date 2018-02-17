@@ -1,0 +1,11 @@
+<div class="app" ng-if="!$ctrl.song">
+Please wait, colors loading...</div>
+<div class="app" ng-if="$ctrl.song">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" ng-src={{$ctrl.spotifyEmbedUrl($ctrl.song.id.songId)}} allowFullScreen></iframe>
+  </div>
+  <div class="color-player-details">
+    <h3>{{$ctrl.video.snippet.title}}</h3>
+    <div>{{$ctrl.song.snippet.description}}</div>
+  </div>
+</div>
