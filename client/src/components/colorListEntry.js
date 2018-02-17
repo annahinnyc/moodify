@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('colorplayer')
 
 .component('colorListEntry', {
   bindings: {
@@ -6,6 +6,5 @@ angular.module('app')
     onClick: '<'
   },
 
-  controller: function() {},
   templateUrl: 'src/templates/colorListEntry.html'
 });

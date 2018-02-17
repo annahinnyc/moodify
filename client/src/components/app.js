@@ -1,6 +1,7 @@
-angular.module('app')
+angular.module('colorplayer')
 
 .controller('AppCtrl', function() {
+//   debugger;
   // spotify.search = (data) => {
   //   this.songs = data;
   //   // this.currentSong = this.songs[0];
@@ -13,8 +14,8 @@ angular.module('app')
   // spotify.search('color therapy', this.searchResults);
 })
 
-.component('app', {
+.component('colorplayer', {
   bindings: {},
-  controller: 'AppCtrl',
   templateUrl: 'src/templates/app.html'
 });
+

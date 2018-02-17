@@ -1,13 +1,13 @@
-angular.module('app', [])
+angular.module('colorplayer', [])
 
-// .controller('ColorPlayerCtrl', function() {
+.controller('ColorPlayerCtrl', function() {
   // this.spotifyEmbedUrl = (songId) => {
   //   return this.song ? `external_urls.spotify${}` : '';
   // };
-// })
+})
 
 .component('colorPlayer', {
-  // controller: 'ColorPlayerCtrl',
+  controller: 'ColorPlayerCtrl',
   bindings: {
     song: '<'
   },

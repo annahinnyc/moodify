@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('colorplayer')
 
 .service('spotify', function($http) {
   this.search = function(callback) {
