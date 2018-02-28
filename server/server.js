@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/songs', (req, res) => {
-  console.log('trying to post!');
+  // console.log('trying to post!');
   // request.get('https://itunes.apple.com/search?term=' + 'yellow' + 'mood&limit=10', function(err, res) {
   //   // console.log(res);
   //   if (err) { console.log('itunes search server error:', err); }
