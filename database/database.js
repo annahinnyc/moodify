@@ -4,11 +4,11 @@ mongoose.connect('mongodb://localhost/songs');
 
 let db = mongoose.connection;
 
-db.on('error', function() {
+db.on('error', () => {
   console.log('mongoose connection error');
 });
 
-db.once('open', function() {
+db.once('open', () => {
   console.log('mongoose connected successfully');
 });
 
