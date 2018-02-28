@@ -6,7 +6,7 @@ angular.module('colorplayer')
     // this.currentSong = this.songs[0];
   });
   this.handleClick = () =>{
-    this.service.search(this.input, function() {
+    this.service.search(this.input, () => {
       this.result(data);
     });
   };
