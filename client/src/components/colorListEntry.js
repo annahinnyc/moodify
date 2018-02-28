@@ -6,5 +6,6 @@ angular.module('colorplayer')
     onClick: '<'
   },
 
+  controller: function() {},
   templateUrl: 'src/templates/colorListEntry.html'
 });

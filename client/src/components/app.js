@@ -1,12 +1,15 @@
 angular.module('colorplayer')
 
-.controller('AppCtrl', function() {
-//   debugger;
-  // spotify.search = (data) => {
-  //   this.songs = data;
-  //   // this.currentSong = this.songs[0];
-  // };
-
+.controller('AppCtrl', (songService) => {
+  songService.getAll((data) => {
+    this.songs = data;
+    // this.currentSong = this.songs[0];
+  });
+  this.handleClick = () =>{
+    this.service.search(this.input, function() {
+      this.result(data);
+    });
+  };
   // this.selectSong = (song) => {
   //   this.currentSong = song;
   // };
@@ -16,6 +19,7 @@ angular.module('colorplayer')
 
 .component('colorplayer', {
   bindings: {},
+  controller: 'AppCtrl',
   templateUrl: 'src/templates/app.html'
 });
 

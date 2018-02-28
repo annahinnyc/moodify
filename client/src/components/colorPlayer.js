@@ -1,6 +1,6 @@
 angular.module('colorplayer', [])
 
-.controller('ColorPlayerCtrl', function() {
+.controller('ColorPlayerCtrl', () => {
   // this.spotifyEmbedUrl = (songId) => {
   //   return this.song ? `external_urls.spotify${}` : '';
   // };

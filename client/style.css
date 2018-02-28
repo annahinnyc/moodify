@@ -2,7 +2,7 @@ body {
   background: #ffffff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffffff, #ffffff, #ECE9E6);
   background: linear-gradient(to right, #ffffff, #ffffff, #ECE9E6);
-
+  font-family: Montserrat, sans-serif;
 }
 
 img {
@@ -11,38 +11,40 @@ img {
 }
 
 .btn {
-  border-radius: 50%;
-  border: none;
-  padding: 15px;
-  font-size: 16px;
+  width: 65px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 5px;
+  font-size: 12px;
   font-weight: bold;
-  color: white;
+  font-family: Montserrat, sans-serif;
+  color: black;
 }
 
 #red {
-  background: red;
+  background: #FFB3BA;
 }
 
 #orange {
-  background: orange;
+  background: #FFDFBA;
 }
 
 #yellow {
-  background: yellow;
+  background: #FFFFBA;
 }
 
 #green {
-  background: green;
+  background: #BAFFC9;
 }
 
 #blue {
-  background: blue;
+  background: #BAE1FF;
 }
 
 #indigo {
-  background: indigo;
+  background: #B19CD9;
 }
 
 #violet {
-  background: violet;
+  background: #d09cd9;
 }

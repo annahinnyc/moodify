@@ -5,6 +5,6 @@ angular.module('colorplayer')
     songs: '<',
     onClick: '<'
   },
-
+  controller: function() {},
   templateUrl: 'src/templates/colorList.html'
 });

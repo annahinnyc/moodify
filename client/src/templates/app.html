@@ -7,11 +7,16 @@
     <button ng-click="" class="btn" id="blue">Blue</button>
     <button ng-click="" class="btn" id="indigo">Indigo</button>
     <button ng-click="" class="btn" id="violet">Violet</button>
+
+    <!-- <input type="text" class="upload-data" ng-model="$ctrl.input">
+     <button ng-click="$ctrl.handleClick()" class="btn" id="violet">Upload</button> -->
   </nav>
+  <a href="http://localhost:8888" >Login to Spotify</a>
   <div>
-    <app song="$ctrl.song" spotify-embed-url="$ctrl.spotifyEmbedUrl" />
+    <h3>Now Playing: </h3>
+    <color-player song="$ctrl.song" spotify-embed-url="$ctrl.spotifyEmbedUrl" />
   </div>
   <div>
-    <color-list songs="$ctrl.songs" on-click="$ctrl.selectSong" />
+    <colorlist songs="$ctrl.songs" on-click="$ctrl.selectSong" />
   </div>
 </div>

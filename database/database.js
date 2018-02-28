@@ -22,12 +22,23 @@ let songSchema = mongoose.Schema({
 songSchema.plugin(uniqueValidator);
 let Song = mongoose.model('Song', songSchema);
 
-let selectAll = function(callback) {
-  Song.find({}, function(err, songs) {
-    if (err) { callback(err, null); }
-    else { callback(null, songs); }
-  });
-};
+module.exports = {
 
-module.exports.selectAll = selectAll;
+  selectAll: (callback) => {
+    Song.find({}, function(err, songs) {
+      if (err) { callback(err, null); }
+      else { callback(null, songs); }
+    });
+  },
+
+  retrieve: (callback) => {
+
+  },
+
+  save: (spotify) => {
+    console.log('spotify', spotifyData);
+    let data = JSON.parse(spotifyData.body);
+  }
+
+};
 
