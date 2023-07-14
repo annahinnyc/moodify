@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
 const uniqueValidator = require('mongoose-unique-validator');
-mongoose.connect('mongodb://localhost/songs');
+mongoose.connect('mongodb://localhost/songs', { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
 
-db.on('error', () => {
-  console.log('mongoose connection error');
-});
-
-db.once('open', () => {
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
   console.log('mongoose connected successfully');
 });
 
@@ -24,21 +21,18 @@ let Song = mongoose.model('Song', songSchema);
 
 module.exports = {
 
-  selectAll: (callback) => {
-    Song.find({}, function(err, songs) {
-      if (err) { callback(err, null); }
-      else { callback(null, songs); }
-    });
+  selectAll: () => {
+    return Song.find({}).exec();
   },
 
-  retrieve: (callback) => {
-
+  retrieve: (songId) => {
+    // Implement the retrieve logic
+    // Return a promise that resolves with the retrieved data
   },
 
-  save: (spotify) => {
-    console.log('spotify', spotifyData);
-    let data = JSON.parse(spotifyData.body);
+  save: (spotifyData) => {
+    // Implement the save logic
+    // Return a promise that resolves when the data is saved
   }
 
 };
-
