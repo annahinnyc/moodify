@@ -17,6 +17,12 @@ Moodify is a web application that curates Spotify playlists based on the user's 
 - Node.js
 - Express.js
 
+```mermaid
+graph TB
+    A[App] --> B[ColorList]
+    B --> C[ColorListEntry]
+    C --> D[ColorPlayer]
+
 ## Getting Started
 
 ### Prerequisites
