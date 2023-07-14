@@ -1,6 +1,7 @@
 ## Mac OSX ##
 .DS_Store
 node_modules
+.env
 
 ## API keys ##
 src/config/spotify.js
