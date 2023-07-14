@@ -22,6 +22,7 @@ graph TB
     A[App] --> B[ColorList]
     B --> C[ColorListEntry]
     C --> D[ColorPlayer]
+```
 
 ## Getting Started
 
